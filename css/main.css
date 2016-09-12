@@ -582,12 +582,7 @@ nav a.active {
 .slide .button {
   color: #fff;
   border-color: #fff;
-  opacity: .6;
-  float: left;
-  margin-left: 30px; }
-  @media (max-width: 414px) {
-    .slide .button {
-      margin-left: 0.625em; } }
+  opacity: .6; }
 
 .slide .button:hover {
   opacity: 1; }
@@ -702,7 +697,8 @@ a.soundcloud {
 /*Grid*/
 .grid-full {
   width: 100%;
-  float: left; }
+  float: left;
+  padding-bottom: 30px; }
 
 .grid-half {
   width: 0%;
