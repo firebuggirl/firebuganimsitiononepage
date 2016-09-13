@@ -223,8 +223,8 @@ nav a.active {
   opacity: 1;
 }
 .slide img {
-  width: 100%;
-  margin: 0px 50% 100px 0%;
+  width: 50%;
+  margin: 80px 50% 100px 0%;
   opacity: 0.7;
   &:hover{
     opacity: 0.8;
@@ -232,18 +232,19 @@ nav a.active {
 
 }
  .blue {
-  background: #877D7D;
+  // background: #877D7D;
+
 
 
 }
 .orange {
-  background: #682424;
+  // background: #682424;
 }
 .green {
-  background: #477761;
+  // background: #477761;
 }
 .yellow {
-  background: #9E8124;
+  // background: #9E8124;
 }
 
 /*Footer*/
@@ -359,25 +360,15 @@ a.soundcloud{
 .grid-full {
   width: 100%;
   float: left;
-  padding-bottom: 30px;
 }
 .grid-half {
-  width: 0%;
+  width: 50%;
   float: left;
-}
-.grid-half2{
-
-  // float:left;
-  // margin-bottom: 30px;
-
-
 }
 .grid-third {
   width: 27.33333%;
   margin: 0 3%;
   float: left;
-
-
 }
 .grid-fourth {
   width: 25%;
@@ -446,8 +437,14 @@ a.soundcloud{
   //   display: none;
   // }
   .slide img {
-    width: 80%;
-    margin: 100px 10%;
+    width: 50%;
+    // margin: 100px 10%;
+    margin: 100px 50% 100px 10%;
+    @include bp(mobile_large){
+      width: 100%;
+      margin: 100px 50% 100px 0%;
+
+    }
   }
 
   .frame {
