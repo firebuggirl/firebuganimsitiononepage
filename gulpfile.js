@@ -17,7 +17,8 @@ gulp.task("concatScripts", function() {
       'js/scroll.js',
       'instashow/jquery.instashow.min.js',
       'js/lightbox.js',
-      'js/spotify.js' ])
+      'js/spotify.js',
+      'js/gallery.js' ])
     .pipe(concat("app.js"))
     .pipe(gulp.dest("js"))
 });

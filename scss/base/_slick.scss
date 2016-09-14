@@ -89,6 +89,9 @@
 .slick-slide img
 {
     display: block;
+    @include bp(mobile_large){
+      margin-top: em(-10px);
+    }
 }
 .slick-slide.slick-loading img
 {

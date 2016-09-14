@@ -23,7 +23,8 @@ img{
 }*/
 
 html{
-  background-color: black;
+   background-color: black;
+
 }
 body {
   background: -webkit-canvas(ParticleCanvas);
@@ -41,6 +42,7 @@ body {
   text-align: center;
   padding-top: 50px;
   // height: 200vh;
+
 }
 
 #ParticleCanvas{
@@ -79,6 +81,7 @@ ul li {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
+
 }
 
 
@@ -97,7 +100,7 @@ h1 {
 }
 h2 {
   font-size: 42px;
-  color: #465058;
+  color: #E0D0CC;
   margin: 40px 0 0;
 }
 h3 {
@@ -141,37 +144,6 @@ h5 {
   }
 }
 
-/*Nav*/
-nav {
-  // float: right;
-  @include bp(mobile_large){
-    @include flex;
-
-    @include flex_align_items--center;
-  }
-}
-nav a {
-  transition: .35s linear;
-  padding: 0 10px;
-  font-weight: 500;
-  line-height: 130px;
-  font-size: 1.5em;
-  color: white;
-  text-align: right;
-  @include bp(mobile_large){
-      padding-left: em(5px);
-      padding-right: em(5px);
-  }
-}
-nav a:last-child {
-  padding-right: 0;
-}
-nav a:hover {
-  color: $rust;
-}
-nav a.active {
-  color: lighten($red, 20%);
-}
 
 /*Button*/
 .button {
@@ -223,11 +195,11 @@ nav a.active {
   opacity: 1;
 }
 .slide img {
-  width: 50%;
+  width: 80%;
   margin: 80px 50% 100px 0%;
-  opacity: 0.7;
+  opacity: 0.9;
   &:hover{
-    opacity: 0.8;
+    opacity: 1;
   }
 
 }
@@ -246,14 +218,24 @@ nav a.active {
 .yellow {
   // background: #9E8124;
 }
+section{
 
+   height: 100vh;
+}
 /*Footer*/
+
 footer {
   margin: 120px 0;
   /*float: left;*/
- display: flex;
- justify-content: center;
+  @include flex;
+ @include flex_justify_center;
   width: 100%;
+  @include bp(mobile_large){
+  margin-top: 200px;
+  margin-bottom: 50px;
+
+}
+
 }
 /*.social {
   margin: 0;
@@ -396,6 +378,10 @@ a.soundcloud{
   .logo {
     // display: none;
     margin: 20px auto 0;
+    @include bp(mobile_large){
+      margin-top: em(-80px);
+
+    }
   }
   .grid-half {
     width: 80%;
@@ -477,6 +463,10 @@ a.soundcloud{
     @include flex_justify_center;
     @include flex_align_items--center;
     height: em(200px);
+  }
+
+  @include bp(mobile_large){
+    height: 3.5em;
   }
 
 
@@ -663,4 +653,10 @@ div {
     //  width:575px;
     //  height:475px;
     //  border:2px solid black
+ }
+
+
+ .video{
+   width: 100%;
+   text-align: center;
  }

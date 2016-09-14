@@ -12,6 +12,7 @@
         <!-- <link rel="stylesheet" href="js/animsition/animsition.min.css"> -->
         <!-- <link rel="stylesheet" href="js/slick/slick.css"> -->
         <!-- <link rel="stylesheet" href="js/slick/slick-theme.css"> -->
+        <link href="instashow/jquery.instashow.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -21,16 +22,40 @@
           <div >
             <a href="index.html" class="logo"></a>
           </div>
-          <div >
-            <!-- <h1 class="description">We make music</h1> -->
-          </div>
+
           <div>
-            <nav>
-              <a href="index.html" >Home</a>
-              <a href="sounds.html" >Sounds</a>
-                <a href="gallery.html" class="active" >Gallery</a>
-              <a href="tour.html" >Tour</a>
+
+
+            <nav id="primary_nav_wrap">
+                  <ul>
+                      <li ><a href="index.html">Home</a></li>
+
+                        <li><a href="sounds.html">Sounds</a>
+                          <ul>
+                            <li><a href="videos.html">Videos</a></li>
+                            </ul>
+                          </li>
+
+
+
+                        <li class="current-menu-item"><a href="gallery.html">Gallery</a>
+                          <!-- <ul>
+                            <li class="dir"><a href="#">Contact Us</a></li>
+
+                          </ul> -->
+
+                        </li>
+
+
+                      <li><a href="tour.html">Tour</a>
+                        <!-- <ul>
+                          <li class="dir"><a href="#">Contact Us</a></li>
+                          <li class="dir"><a href="#">Mailing List</a></li>
+                        </ul> -->
+                      </li>
+                </ul>
             </nav>
+
           </div>
       </header><!--/header-->
         <div class="main row">
@@ -61,7 +86,7 @@
         			     data-is-width="auto"
         			     data-is-height="auto"
         					 data-is-gutter="20px"
-        			     data-is-columns="4"
+        			     data-is-columns="3"
         			     data-is-rows="4"
         			     data-is-direction="vertical"
         					 data-is-effect="fade"
@@ -115,13 +140,7 @@
           <div class="row">
             <div class="grid-full">
               <p>Connect with us</p>
-              <!-- <ul class="social">
-                <li>
-                  <a href="#" class="pink"></a>
-                  <a href="#" class="light-blue"></a>
-                  <a href="#" class="dark-blue"></a>
-                </li>
-              </ul> -->
+
               <ul class="social">
                 <li><a href="http://twitter.com/firebugmusic" class="social twitter" id="twitter" aria-hidden="true">Twitter</a></li>
                 <li><a href="https://www.linkedin.com/today/posts/jules-shapiro+0_32rnBeUkTASxhLkZCLBK9h" class="social linkedIn" id="linkedIn" aria-hidden="true">linkedIn</a></li>
@@ -145,7 +164,7 @@
         <script src="js/main.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.runtime.min.js"></script>
-        <link href="instashow/jquery.instashow.min.css" rel="stylesheet">
+
         <!-- <script src="instashow/jquery.instashow.min.js"></script> -->
 
           <script src="js/app.js"></script>
